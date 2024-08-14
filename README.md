@@ -37,10 +37,15 @@ Contributions are always welcome!
   #Lessons Learned
   
   1.Maintaining state at top level component
+  
   2.useState hook usage
+  
   3.useEffect hook usage
+  
   4.passing props
+  
   5.conditional rendering
+  
   6.modular css
 
   #Tech Stck
