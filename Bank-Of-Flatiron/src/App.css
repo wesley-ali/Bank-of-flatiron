@@ -1,42 +1,82 @@
-#root {
-  max-width: 1280px;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #003366;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0091D5;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.transaction-table th {
+  background-color: #003366;
+  color: #ffffff;
 }
 
-.card {
-  padding: 2em;
+.transaction-table td.income {
+  color: #0091D5;
 }
 
-.read-the-docs {
-  color: #888;
+.transaction-table td.expense {
+  color: #FFCC00;
+}
+
+.transaction-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.transaction-form input,
+.transaction-form button {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.transaction-form button {
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+}
+
+.transaction-form button:hover {
+  background-color: #0091D5;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
